@@ -10,5 +10,5 @@ Required Python Modules :
 - logging
 
 ## Notes
-- Modules have to be installed manually
+- Modules have to be installed manually.
 - Rename `<location>` in line 11 with desired location of log file.
