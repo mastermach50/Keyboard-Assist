@@ -5,7 +5,7 @@ import sys
 import logging
 #===========================================================================
 '''Settings'''
-tr = "`" #Trigger Key
+tk = "`" #Trigger Key
 cd = 20 #Click Delay (ms)
 ek = "x" #Exit Key
 lf = "<location>" #Log File Location
@@ -21,7 +21,7 @@ logging.basicConfig(filename=(lf), level=logging.DEBUG, format="%(asctime)s: %(m
 logging.info("Started a new session")
 x = 0
 while True:
-    if keyboard.is_pressed(tr):
+    if keyboard.is_pressed(tk):
         mouse.click()
         x = x + 1
         print("clicked ", x)
