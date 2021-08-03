@@ -3,8 +3,8 @@
 An auto clicker using the keyboard and mouse module in pyhon.
 
 Required Python Modules :
-- keyboard
-- mouse
+- [keyboard](http://github.com/boppreh/keyboard)
+- [mouse](http://github.com/boppreh/mouse)
 - time
 
 ## Notes
