@@ -11,7 +11,7 @@ Required Python Modules :
 - Modules have to be installed manually.
 
 ## Setup
-- Open `Autoclicker.py` with a text editor.
+- Open `autoclicker.py` with a text editor.
 - At the beginning of the file is the settings.
 - Edit these to customize the settings.
 
