@@ -2,7 +2,7 @@ import mouse
 import keyboard
 import time
 
-#====================
+#============================================================
 'Settings'
 trigger = "`"
 escape = "x"
@@ -10,10 +10,21 @@ plus = "."
 minus = ","
 start_delay = 0.1
 cps = 70
-#====================
+default_button = "r"
+#============================================================
 
 cd = 1/cps
 
+click = None
+if default_button == "r":
+    click = mouse.click
+if default_button == "l":
+    click = mouse.right_click
+
+assert click
+
+#============================================================
+#cps setter
 def increase(key):
     global cps
     global cd
@@ -34,9 +45,27 @@ def decrease(key):
 keyboard.on_press_key(plus, increase, suppress = True)
 keyboard.on_press_key(minus, decrease, suppress = True)
 
+#============================================================
+#button changer
+def change_button(key):
+    global click
+    if click == mouse.click:
+        click = mouse.right_click
+        print("Button changed to RIGHT")
+        time.sleep(0.5)
+    elif click == mouse.right_click:
+        click = mouse.click
+        print("Button changed to LEFT")
+        time.sleep(0.5)
+
+keyboard.on_press_key("/", change_button, suppress = True)
+
+#============================================================
+#loop
+
 while True:
     while keyboard.is_pressed(trigger):
-        mouse.click()
+        click()
         time.sleep(cd)
     if keyboard.is_pressed(escape):
         exit()
