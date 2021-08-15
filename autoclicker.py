@@ -11,7 +11,7 @@ minus = ","
 start_delay = 0.1
 cps = 70
 default_button = "l"
-change_button = "/"
+change_button_key = "/"
 #============================================================
 
 cd = 1/cps
@@ -53,13 +53,11 @@ def change_button(key):
     if click == mouse.click:
         click = mouse.right_click
         print("Button changed to RIGHT")
-        time.sleep(0.5)
     elif click == mouse.right_click:
         click = mouse.click
         print("Button changed to LEFT")
-        time.sleep(0.5)
 
-keyboard.on_press_key(change_button, change_button, suppress = True)
+keyboard.on_press_key(change_button_key, change_button, suppress = True)
 
 #============================================================
 #loop
