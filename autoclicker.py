@@ -17,9 +17,9 @@ change_button = "/"
 cd = 1/cps
 
 click = None
-if default_button == "r":
-    click = mouse.click
 if default_button == "l":
+    click = mouse.click
+elif default_button == "r":
     click = mouse.right_click
 
 assert click
