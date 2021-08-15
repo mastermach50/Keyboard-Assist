@@ -35,10 +35,10 @@ Required Python Modules :
 - default_button: `l`
 - change_button: `/`
 ---
-### Usage
-#### Clicking
+## Usage
+### Clicking
 Press the set `trigger` to start clicking at the set `cps`.
-#### Increasing and Decreasing CPS
+### Increasing and Decreasing CPS
 Press the set `plus` or `minus` buttons to increase or decrease the cps respectively. You can also press and hold to keep increasing/decreasing the cps. The cps will be displayed in the console when changed.
-#### Change The Clicking Button
+### Change The Clicking Button
 Press the set `change_button` key to change the mouse button used for clicking.
