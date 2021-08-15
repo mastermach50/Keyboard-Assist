@@ -15,7 +15,7 @@ Required Python Modules :
 - At the beginning of the file is the settings.
 - Edit these to customize the settings.
 ---
-### Settings
+## Settings
 - trigger: the key to start clicking (release key to stop) - `str` (keyboard key)
 - escape: the key to stop the program - `str` (keyboard key)
 - plus: the key increase cps - `str` (keyboard key)
