@@ -10,7 +10,8 @@ plus = "."
 minus = ","
 start_delay = 0.1
 cps = 70
-default_button = "r"
+default_button = "l"
+change_button = "/"
 #============================================================
 
 cd = 1/cps
@@ -58,7 +59,7 @@ def change_button(key):
         print("Button changed to LEFT")
         time.sleep(0.5)
 
-keyboard.on_press_key("/", change_button, suppress = True)
+keyboard.on_press_key(change_button, change_button, suppress = True)
 
 #============================================================
 #loop
