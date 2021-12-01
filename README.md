@@ -19,7 +19,8 @@ A system tray application written in python that will assist you with your keybo
 ---
 
 ## Buttons In System Tray
-<img alt="tray sample" height = 150 src="https://user-images.githubusercontent.com/64970593/134365306-15e599ed-d4e1-4efc-8699-996d51515ca9.png">
+
+<img alt="tray sample" height = 250 src="https://user-images.githubusercontent.com/64970593/144190208-bac1ee29-eb08-48e6-91e6-1168d49acf80.png">
 
 
 ## Active
@@ -71,6 +72,9 @@ On typing dtt and pressing space dtt will be replaced by the current date and ti
 ## Media Control
 (Enabled by default)
 
-For keyboards that don't have a  media play/pause key pressing `alt + `\` will play/pause the media playing in the background (only for supported applications like chrome, vlc etc.)
+For keyboards that don't have a  media play/pause key pressing `alt + `\` (default hotkey) will play/pause the media playing in the background (only for supported applications like chrome, vlc etc.)
 
+## More
+### Open File Location
+Open the folder which contains all the files of this application
 > Also don't mind forking or suggesting changes, it will be a great help!
