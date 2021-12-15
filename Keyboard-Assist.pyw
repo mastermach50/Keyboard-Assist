@@ -55,7 +55,6 @@ def keyboard_hooks():  # start all keyboard hooks
     emails = items["mails"]
     for mail in emails.keys():
         keyboard.add_word_listener(mail, lambda: writemail(emails[mail]))
-    del emails
 
     # date and time
     keyboard.add_word_listener("dtt", timendate, triggers=["space"])
